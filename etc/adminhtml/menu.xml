@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Jlk_Email::jlk" title="JLK" translate="title" module="Jlk_Email" sortOrder="50" resource="Jlk_Email::jlk" />
+        <add id="Jlk_Email::features" title="Features" module="Jlk_Email" sortOrder="100" resource="Jlk_Email::features" parent="Jlk_Email::jlk"/>
+        <add id="Jlk_email::features_email" title="Email" module="Jlk_Email" sortOrder="100" resource="Jlk_Email::features_email" parent="Jlk_Email::features" action="jlk/features/email"/>
+        <add id="Jlk_Email::configuration" title="Configuration" module="Jlk_Email" sortOrder="200" resource="Jlk_Email::configuration" parent="Jlk_Email::jlk"/>
+        <add id="Jlk_Email::configuration_email" title="Email" module="Jlk_Email" sortOrder="100" resource="Jlk_Email::configuration_email" parent="Jlk_Email::configuration" action="admin/system_config/edit/section/email"/>
+    </menu>
+</config>

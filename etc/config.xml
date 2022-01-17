@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <jlk_email>
+            <general>
+                <debug_email>1</debug_email>
+            </general>
+        </jlk_email>
+    </default>
+</config>

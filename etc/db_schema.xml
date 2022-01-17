@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="jlk_debug_email" resource="default" engine="innodb" comment="JLK Debug Email">
+        <column name="email_id" xsi:type="int" padding="10" unsigned="true" nullable="false" identity="true" comment="Email ID"/>
+        <column name="subject" xsi:type="varchar" length="255" default="" comment="Subject"/>
+        <column name="to" xsi:type="varchar" length="255" default="" comment="To"/>
+        <column name="from" xsi:type="varchar" length="255" default="" comment="From"/>
+        <column name="cc" xsi:type="varchar" length="255" default="" comment="Cc"/>
+        <column name="bcc" xsi:type="varchar" length="255" default="" comment="Bcc"/>
+        <column name="reply_to" xsi:type="varchar" length="255" default="" comment="Reply To"/>
+        <column name="sender" xsi:type="varchar" length="255" default="" comment="Sender"/>
+        <column name="body" xsi:type="text" nullable="true" comment="Body"/>
+        <column name="created_at" xsi:type="timestamp" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="Creation Time"/>
+        <column name="updated_at" xsi:type="timestamp" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Update Time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="email_id"/>
+        </constraint>
+        <index referenceId="JLK_DEBUG_EMAIL_SENDER" indexType="btree">
+            <column name="sender"/>
+        </index>
+    </table>
+</schema>
