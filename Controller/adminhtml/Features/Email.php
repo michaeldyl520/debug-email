@@ -10,7 +10,7 @@ namespace Jlk\Email\Controller\adminhtml\Features;
 
 use Magento\Backend\App\Action\Context;
 
-class Email extends \Magento\Backend\App\Action
+abstract class Email extends \Magento\Backend\App\Action
 {
     protected \Magento\Framework\View\Result\PageFactory $resultPageFactory;
 
@@ -21,16 +21,5 @@ class Email extends \Magento\Backend\App\Action
     {
         parent::__construct($context);
         $this->resultPageFactory = $resultPageFactory;
-    }
-
-    public function execute()
-    {
-        /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
-        $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Jlk_Email::Jlk_email::features_email')
-            ->addBreadcrumb(__('Features'), __('Features'))
-            ->addBreadcrumb(__('Debug Email'), __('Debug Email'));
-        $resultPage->getConfig()->getTitle()->prepend(__('Email'));
-        return $resultPage;
     }
 }

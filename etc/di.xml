@@ -1,6 +1,31 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * Copyright © JLK. All rights reserved.
+ * Created by JLK https://www.jiliuke.com.
+ * User: michaeldyl520 michaeldyl520@gmail.com
+ * Date: 2022/1/17
+ */
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Email\Model\Transport">
         <plugin name="jlk_email_transport" type="Jlk\Email\Plugin\Magento\Email\Model\Transport"/>
+    </type>
+    <preference for="Jlk\Email\Api\Data\DebugEmailInterface" type="Jlk\Email\Model\DebugEmail"/>
+    <preference for="Jlk\Email\Api\DebugEmailRepositoryInterface" type="Jlk\Email\Model\DebugEmailRepository"/>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="jlk_debug_email_listing_data_source" xsi:type="string">Jlk\Email\Model\ResourceModel\DebugEmail\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Jlk\Email\Model\ResourceModel\DebugEmail\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">jlk_debug_email</argument>
+            <argument name="eventPrefix" xsi:type="string">jlk_debug_email_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">debug_email_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Jlk\Email\Model\ResourceModel\DebugEmail</argument>
+        </arguments>
     </type>
 </config>

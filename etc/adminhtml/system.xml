@@ -1,8 +1,16 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * Copyright © JLK. All rights reserved.
+ * Created by JLK https://www.jiliuke.com.
+ * User: michaeldyl520 michaeldyl520@gmail.com
+ * Date: 2022/1/17
+ */
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="jlk" translate="label" sortOrder="500">
-            <label>JLK</label>
+            <label>Jlk Extension</label>
         </tab>
         <section id="jlk_email" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
             <label>Email</label>

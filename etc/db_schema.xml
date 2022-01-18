@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * Copyright © JLK. All rights reserved.
+ * Created by JLK https://www.jiliuke.com.
+ * User: michaeldyl520 michaeldyl520@gmail.com
+ * Date: 2022/1/17
+ */
+-->
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <table name="jlk_debug_email" resource="default" engine="innodb" comment="JLK Debug Email">
         <column name="email_id" xsi:type="int" padding="10" unsigned="true" nullable="false" identity="true" comment="Email ID"/>

@@ -9,10 +9,11 @@
 namespace Jlk\Email\Api\Data;
 
 /**
- * Interface EmailInterface
- * @package Jlk\Email\Api\Data
+ * Interface DebugEmailInterface
+ *
+ * @api
  */
-interface EmailInterface
+interface DebugEmailInterface
 {
     /**
      *
@@ -66,7 +67,7 @@ interface EmailInterface
 
     /**
      * @param int $emailId
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setEmailId($emailId);
 
@@ -77,7 +78,7 @@ interface EmailInterface
 
     /**
      * @param string $subject
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setSubject($subject);
 
@@ -88,7 +89,7 @@ interface EmailInterface
 
     /**
      * @param string $to
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setTo($to);
 
@@ -99,7 +100,7 @@ interface EmailInterface
 
     /**
      * @param string $from
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setFrom($from);
 
@@ -110,7 +111,7 @@ interface EmailInterface
 
     /**
      * @param string $cc
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setCc($cc);
 
@@ -121,7 +122,7 @@ interface EmailInterface
 
     /**
      * @param string $bcc
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setBcc($bcc);
 
@@ -132,7 +133,7 @@ interface EmailInterface
 
     /**
      * @param string $replyTo
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setReplyTo($replyTo);
 
@@ -143,7 +144,7 @@ interface EmailInterface
 
     /**
      * @param string $sender
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setSender($sender);
 
@@ -154,7 +155,7 @@ interface EmailInterface
 
     /**
      * @param string $body
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setBody($body);
 
@@ -165,7 +166,7 @@ interface EmailInterface
 
     /**
      * @param string $createdAt
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setCreatedAt($createdAt);
 
@@ -176,7 +177,7 @@ interface EmailInterface
 
     /**
      * @param string $updatedAt
-     * @return \Jlk\Email\Api\Data\EmailInterface
+     * @return \Jlk\Email\Api\Data\DebugEmailInterface
      */
     public function setUpdatedAt($updatedAt);
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © JLK. All rights reserved.
+ * Created by JLK https://www.jiliuke.com.
+ * User: michaeldyl520 michaeldyl520@gmail.com
+ * Date: 2022/1/17
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="jlk_debug_email_listing"/>
+        </referenceContainer>
+    </body>
+</page>

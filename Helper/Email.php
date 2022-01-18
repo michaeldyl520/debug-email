@@ -16,4 +16,14 @@ class Email extends \Magento\Framework\App\Helper\AbstractHelper
     {
         return $this->scopeConfig->getValue(self::XML_PATH_JLK_EMAIL_GENRERAL_DEBUG_EMAIL, \Magento\Store\Model\ScopeInterface::SCOPE_STORE, $store);
     }
+
+    public function getNameEmailString(array $data)
+    {
+        $dataArray = [];
+        /** @var \Magento\Framework\Mail\Address $mailAddress */
+        foreach ($data as $mailAddress) {
+            array_push($dataArray, "{$mailAddress->getName()} {$mailAddress->getEmail()}");
+        }
+        return implode(',', $dataArray);
+    }
 }
