@@ -6,7 +6,7 @@
  * Date: 2022/1/17
  */
 
-namespace Jlk\Email\Controller\adminhtml\Features;
+namespace Jlk\Email\Controller\Adminhtml\Features;
 
 use Magento\Backend\App\Action\Context;
 

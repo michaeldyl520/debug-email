@@ -6,9 +6,9 @@
  * Date: 2022/1/18
  */
 
-namespace Jlk\Email\Controller\adminhtml\Features\Email;
+namespace Jlk\Email\Controller\Adminhtml\Features\Email;
 
-class Index extends \Jlk\Email\Controller\adminhtml\Features\Email
+class Index extends \Jlk\Email\Controller\Adminhtml\Features\Email
 {
     public function execute()
     {
